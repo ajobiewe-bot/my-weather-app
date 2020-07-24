@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h1>
+            Friday June 19th, 2020
+          </h1>
+          <hr class="lines" />
+          <form id="search-form">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <input
+                  type="search"
+                  placeholder="Search city"
+                  class="form-control"
+                  id="search-city-input"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <button type="button" class="form-control" id="current-button">
+                  Current
+                </button>
+              </div>
+              <div class="col-6">
+                <input type="submit" value="Search 🔍 " class="form-control" />
+              </div>
+            </div>
+          </form>
+
+          <hr class="lines second" />
+          <div class="content">
+            <div class="row">
+              <div class="col-4 data">
+                <p>💧Humidity : <span id="humidity">52</span>%</p>
+                <p>💨 Wind : <span id="wind">10</span>km/hr</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h2>
+                  <span id="city"> Welcome </span>
+                  <br />
+                  <span class="emoji"> ☁️</span>
+                  <small id="temp-description">mostly cloudy</small>
+                </h2>
+              </div>
+            </div>
+            <div class="row temperature">
+              <div class="col">
+                <p>
+                  <span id="temp">23</span>
+                  <sup class="degree">
+                    <a href="#" id="celsius-link">°C </a>|
+                    <a href="#" id="fahrenheit-link">°F </a>
+                  </sup>
+                </p>
+                <p>
+                  Real feel : <span id="real-feel">23</span>
+                  <sup class="degree">°C</sup>
+                </p>
+                <p>
+                  ↑<span id="max-temp">23°</span> ↓<span id="min-temp"
+                    >11°</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr class="lines last" />
+          <div class="row days">
+            <div class="col">
+              Sat
+              <br />
+              <span class="days-emoji">
+                ☁️
+              </span>
+              <br />
+              <span class="days-temp">
+                22°|13°
+              </span>
+            </div>
+            <div class="vl"></div>
+            <div class="col">
+              Sun
+              <br />
+              <span class="days-emoji">
+                ⛅️
+              </span>
+              <br />
+              <span class="days-temp">
+                20°|11°
+              </span>
+            </div>
+            <div class="vl"></div>
+            <div class="col">
+              Mon
+              <br />
+              <span class="days-emoji">
+                ⛅️
+              </span>
+              <br />
+              <span class="days-temp">
+                23°|14°
+              </span>
+            </div>
+            <div class="vl"></div>
+            <div class="col">
+              Tue
+              <br />
+              <span class="days-emoji">
+                ☁️
+              </span>
+              <br />
+              <span class="days-temp">
+                24°|14°
+              </span>
+            </div>
+            <div class="vl"></div>
+            <div class="col">
+              Wed
+              <br />
+              <span class="days-emoji">
+                🌧
+              </span>
+              <br />
+              <span class="days-temp">
+                22°|13°
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
