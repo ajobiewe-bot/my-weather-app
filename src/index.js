@@ -18,7 +18,7 @@ let days = [
   "Saturday",
 ];
 let day = days[time.getDay(4)];
-h1.innerHTML = `${day} ${hour}:${minutes}`;
+h1.innerHTML = `Last updated: ${day} ${hour}:${minutes}`;
 
 function search(event) {
   event.preventDefault();
