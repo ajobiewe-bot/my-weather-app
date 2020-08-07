@@ -25,7 +25,10 @@ h2 {
 }
 
 .emoji {
-  font-size: 100px;
+  font-size: 3em;
+  height: 1rem;
+  position: relative;
+  top: -20px;
 }
 small {
   display: block;
@@ -35,6 +38,15 @@ small {
   position: relative;
   right: 5px;
   top: 110px;
+}
+#temp {
+  text-align: center;
+}
+.description {
+  text-align: center;
+}
+.description::first-letter {
+  text-transform: uppercase;
 }
 .row.temperature {
   bottom: 230px;
@@ -69,12 +81,20 @@ small {
   right: 8px;
   top: 60px;
 }
+.units .active {
+  color: rgb(245, 255, 255);
+  cursor: default;
+}
+.units .active:hover {
+  text-decoration: none;
+}
 .units {
   color: yellowgreen;
   font-size: 15px;
   position: relative;
   top: -10px;
 }
+
 .degree {
   position: relative;
   top: -8px;
