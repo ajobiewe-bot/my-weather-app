@@ -67,14 +67,15 @@ small {
 }
 .days {
   bottom: 100px;
-  font-size: 18px;
   left: 12px;
   position: relative;
 }
-.days-emoji {
-  font-size: 38px;
+.days-icon {
+  display: block;
+  font-size: 8px;
   position: relative;
-  top: 30px;
+  top: 3px;
+  right: 30px;
 }
 .days-temp {
   position: relative;
@@ -103,5 +104,5 @@ small {
   border-left: 2px solid rgba(208, 233, 220, 0.637);
   height: 170px;
   position: relative;
-  right: 15px;
+  right: 18px;
 }
