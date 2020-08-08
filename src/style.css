@@ -10,7 +10,7 @@
   margin-top: 35px;
   padding-top: 40px;
   padding-bottom: 60px;
-  width: 50%;
+  width: 48%;
 }
 h1 {
   font-size: medium;
@@ -55,7 +55,7 @@ small {
   position: relative;
 }
 .lines {
-  border-top: 3px dotted rgb(153, 224, 246);
+  border-top: 3px dashed rgb(153, 224, 246);
 }
 .lines.second {
   position: relative;
@@ -65,22 +65,22 @@ small {
   bottom: 110px;
   position: relative;
 }
-.days {
+.time {
   bottom: 100px;
-  left: 12px;
+  left: -1px;
   position: relative;
 }
 .days-icon {
   display: block;
-  font-size: 8px;
   position: relative;
-  top: 3px;
-  right: 30px;
+  bottom: -25px;
+  right: 12px;
+  width: 65px;
 }
 .days-temp {
   position: relative;
   right: 8px;
-  top: 60px;
+  top: 35px;
 }
 .units .active {
   color: rgb(245, 255, 255);
@@ -101,8 +101,9 @@ small {
   top: -8px;
 }
 .vl {
-  border-left: 2px solid rgba(208, 233, 220, 0.637);
-  height: 170px;
+  border-left: 2px dashed rgba(208, 233, 220, 0.637);
+  height: 177px;
   position: relative;
-  right: 18px;
+  right: 12px;
+  bottom: 100px;
 }

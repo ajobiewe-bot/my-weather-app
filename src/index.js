@@ -66,24 +66,28 @@ function getCurrentPosition() {
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  let forecast = response.data.list[0];
-  console.log(forecast);
-  forecastElement.innerHTML = `
-  <div class="col">
-         ${formatHours(forecast.dt * 1000)}
-       <br />
-       <img src="http://openweathermap.org/img/wn/${
-         forecast.weather[0].icon
-       }@2x.png" alt=""
-       class = "days-icon">
-       <br />
-       <span class="days-temp">
-       ${Math.round(forecast.main.temp_max)}°|${Math.round(
-    forecast.main.temp_min
-  )}°
-      </span>
-     </div>
-            `;
+  forecastElement.innerHTML = null;
+  let forecast = null;
+  for (let index = 0; index < 6; index++) {
+    forecast = response.data.list[index];
+    forecastElement.innerHTML += `
+    <div class="col time">
+           ${formatHours(forecast.dt * 1000)}
+         <br />
+         <img src="http://openweathermap.org/img/wn/${
+           forecast.weather[0].icon
+         }@2x.png" alt=""
+         class = "days-icon">
+         <br />
+         <span class="days-temp">
+         ${Math.round(forecast.main.temp_max)}°${Math.round(
+      forecast.main.temp_min
+    )}°
+        </span>
+       </div>
+       <div class="vl"> </div>
+              `;
+  }
 }
 
 function search(city) {
