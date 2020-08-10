@@ -111,3 +111,8 @@ small {
   right: 12px;
   bottom: 100px;
 }
+.code {
+  position: relative;
+  left: 245px;
+  color: #13547a;
+}
