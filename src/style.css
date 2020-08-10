@@ -1,10 +1,5 @@
 .card {
-  background-image: linear-gradient(
-    -225deg,
-    #a445b2 0%,
-    #d41872 52%,
-    #ff0066 100%
-  );
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   color: rgb(245, 255, 255);
   height: 800px;
   margin-top: 35px;
@@ -24,29 +19,50 @@ h2 {
   text-align: center;
 }
 
-.emoji {
-  font-size: 3em;
-  height: 1rem;
-  position: relative;
-  top: -20px;
-}
 small {
   display: block;
   font-weight: normal;
 }
+.lines {
+  border-top: 1px dashed rgb(153, 224, 246);
+}
 .col-6 .form-control {
-  background-color: rgb(35, 97, 155);
+  background-color: rgb(14, 99, 121);
   color: whitesmoke;
   box-shadow: 2px 2px 3px #290c1ac9;
   border: #a445b2;
+}
+.lines.second {
+  position: relative;
+  top: 10px;
 }
 .data {
   position: relative;
   right: 5px;
   top: 130px;
 }
+
+.emoji {
+  font-size: 3em;
+  height: 1rem;
+  position: relative;
+  top: -20px;
+}
 #temp {
   text-align: center;
+}
+.units .active {
+  color: rgb(245, 255, 255);
+  cursor: default;
+}
+.units .active:hover {
+  text-decoration: none;
+}
+.units {
+  color: yellowgreen;
+  font-size: 15px;
+  position: relative;
+  top: -10px;
 }
 .description {
   text-align: center;
@@ -60,12 +76,9 @@ small {
   left: 340px;
   position: relative;
 }
-.lines {
-  border-top: 1px dashed rgb(153, 224, 246);
-}
-.lines.second {
+.degree {
   position: relative;
-  top: 10px;
+  top: -8px;
 }
 .lines.last {
   bottom: 110px;
@@ -90,24 +103,7 @@ small {
   top: 35px;
   font-size: 14px;
 }
-.units .active {
-  color: rgb(245, 255, 255);
-  cursor: default;
-}
-.units .active:hover {
-  text-decoration: none;
-}
-.units {
-  color: yellowgreen;
-  font-size: 15px;
-  position: relative;
-  top: -10px;
-}
 
-.degree {
-  position: relative;
-  top: -8px;
-}
 .vl {
   border-left: 1px dashed rgba(208, 233, 220, 0.637);
   height: 177px;
