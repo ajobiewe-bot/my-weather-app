@@ -34,10 +34,16 @@ small {
   display: block;
   font-weight: normal;
 }
+.col-6 .form-control {
+  background-color: rgb(35, 97, 155);
+  color: whitesmoke;
+  box-shadow: 2px 2px 3px #290c1ac9;
+  border: #a445b2;
+}
 .data {
   position: relative;
   right: 5px;
-  top: 110px;
+  top: 130px;
 }
 #temp {
   text-align: center;
@@ -49,13 +55,13 @@ small {
   text-transform: uppercase;
 }
 .row.temperature {
-  bottom: 230px;
+  bottom: 225px;
   font-size: 18px;
   left: 340px;
   position: relative;
 }
 .lines {
-  border-top: 3px dashed rgb(153, 224, 246);
+  border-top: 1px dashed rgb(153, 224, 246);
 }
 .lines.second {
   position: relative;
@@ -67,6 +73,7 @@ small {
 }
 .time {
   bottom: 100px;
+  font-size: 14px;
   left: -1px;
   position: relative;
 }
@@ -81,6 +88,7 @@ small {
   position: relative;
   right: 8px;
   top: 35px;
+  font-size: 14px;
 }
 .units .active {
   color: rgb(245, 255, 255);
@@ -101,7 +109,7 @@ small {
   top: -8px;
 }
 .vl {
-  border-left: 2px dashed rgba(208, 233, 220, 0.637);
+  border-left: 1px dashed rgba(208, 233, 220, 0.637);
   height: 177px;
   position: relative;
   right: 12px;

@@ -41,7 +41,7 @@ function getTemperature(response) {
   cityName.innerHTML = response.data.name;
   description.innerHTML = response.data.weather[0].description;
   displayHumidity.innerHTML = response.data.main.humidity;
-  displayWind.innerHTML = response.data.wind.speed;
+  displayWind.innerHTML = Math.round(response.data.wind.speed);
   displayRealFeelTemp.innerHTML = Math.round(response.data.main.feels_like);
   displayMaxTemp.innerHTML = Math.round(response.data.main.temp_max);
   displayMinTemp.innerHTML = Math.round(response.data.main.temp_min);
@@ -80,7 +80,7 @@ function displayForecast(response) {
          class = "days-icon">
          <br />
          <span class="days-temp">
-         ${Math.round(forecast.main.temp_max)}°${Math.round(
+         ${Math.round(forecast.main.temp_max)}° ${Math.round(
       forecast.main.temp_min
     )}°
         </span>
@@ -134,4 +134,4 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
-search("Lagos");
+search("Addis Ababa");
